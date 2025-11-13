@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="383.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tcet.bookhive.controller.RemoveBookController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="699.0" prefWidth="787.0" spacing="30.0" stylesheets="@../../../../styles/removebook.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Remove Book" textFill="#003f5c">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="booklistcombobox" prefHeight="50.0" prefWidth="236.0" promptText="select book name">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </ComboBox>
+            <Label fx:id="copieslabel" textFill="RED">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="copiesfield" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="236.0" promptText="enter no. of copies to be removed" />
+            <Button id="ancbtn" fx:id="rembookbtn" mnemonicParsing="false" onAction="#handleremovebook" prefHeight="44.0" prefWidth="149.0" text="Remove Book" textFill="WHITE" />
+            <Label fx:id="messageLabel" textFill="RED">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

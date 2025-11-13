@@ -1,0 +1,20 @@
+#ancbtn{
+    -fx-background-color :  #003F5C;
+    -fx-border-color: #003F5C;
+    -fx-border-width : 0px;
+    -fx-border-radius : 50px;
+    -fx-background-radius : 50px;
+    -fx-border-style : solid;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0.3, 0, 2);
+    }
+#ancbtn:hover{
+    -fx-background-color : #00334B;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    }
+#ancbtn:pressed{
+    -fx-background-color : black;
+}
+.mainFxmlClass {
+
+}

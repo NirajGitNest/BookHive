@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="mainContent" alignment="TOP_CENTER" prefHeight="733.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tcet.bookhive.controller.DashboardContentController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="760.0" prefWidth="643.0" spacing="60.0" stylesheets="@../../../../styles/dashboardview.css">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="643.0">
+               <children>
+                  <Label fx:id="userLabel" centerShape="false">
+                     <font>
+                        <Font name="Perpetua Bold" size="48.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <VBox fx:id="bkvbox" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="312.0">
+                     <children>
+                        <Label fx:id="nobklabel" alignment="TOP_CENTER" contentDisplay="CENTER" text="500" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="48.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="40.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label alignment="BOTTOM_CENTER" text="Number Of Books" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="100.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+                  <VBox fx:id="stdvbox" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="312.0">
+                     <children>
+                        <Label fx:id="nostdlabel" alignment="TOP_CENTER" contentDisplay="CENTER" text="300" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="48.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="40.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label alignment="BOTTOM_CENTER" text="Number Of Students" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="234.0" prefWidth="603.0" spacing="20.0">
+               <children>
+                  <VBox fx:id="issvbox" alignment="TOP_CENTER" prefHeight="234.0" prefWidth="470.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label fx:id="noisslabel" alignment="TOP_CENTER" contentDisplay="CENTER" text="150" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="48.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="40.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label alignment="BOTTOM_CENTER" text="Number Of Books Issued" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets top="40.0" />
+   </padding>
+</StackPane>

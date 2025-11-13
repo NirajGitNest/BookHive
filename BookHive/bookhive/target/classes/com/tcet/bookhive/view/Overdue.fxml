@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane alignment="TOP_CENTER" prefHeight="733.0" prefWidth="643.0" stylesheets="@../../../../styles/overdue.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tcet.bookhive.controller.OverdueController">
+   <children>
+      <VBox prefHeight="699.0" prefWidth="787.0" spacing="20.0">
+         <children>
+            <TableView fx:id="overduetable" prefHeight="238.0" prefWidth="643.0">
+               <columns>
+                  <TableColumn fx:id="bknamecolumn" prefWidth="75.0" text="Book Name" />
+                  <TableColumn fx:id="stdnamecolumn" prefWidth="75.0" text="Student Name" />
+                  <TableColumn fx:id="issuedatecolumn" prefWidth="75.0" text="Issue date" />
+                  <TableColumn fx:id="returndatecolumn" prefWidth="75.0" text="Return Date" />
+                  <TableColumn fx:id="dayslatecolumn" prefWidth="75.0" text="Days Late" />
+                  <TableColumn fx:id="fineamountcolumn" prefWidth="75.0" text="Fine Amount" />
+                  <TableColumn fx:id="finestatuscolumn" prefWidth="75.0" text="Fine Status" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+         <padding>
+            <Insets top="40.0" />
+         </padding>
+      </VBox>
+   </children>
+</StackPane>
